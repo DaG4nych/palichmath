@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqtt}{rgb}{0.,0.,0.2}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=2.0cm,ystep=2.0cm] (-2.5,-0.5) grid (5.,6.8);
+\clip(-2.5,-0.5) rectangle (5.,6.8);
+\draw [->,line width=2.pt] (-2.,6.) -- (0.,6.);
+\draw [->,line width=2.pt] (0.,6.) -- (-2.,4.);
+\draw [->,line width=2.pt] (-2.,4.) -- (-2.,2.);
+\draw [->,line width=2.pt] (-2.,2.) -- (0.,4.);
+\draw [->,line width=2.pt] (0.,4.) -- (2.,6.);
+\draw [->,line width=2.pt] (2.,6.) -- (4.,6.);
+\draw [->,line width=2.pt] (4.,6.) -- (2.,4.);
+\draw [->,line width=2.pt] (2.,4.) -- (0.,2.);
+\draw [->,line width=2.pt] (0.,2.) -- (-2.,0.);
+\begin{scriptsize}
+\draw [fill=qqqqtt] (-2.,6.) circle (2.5pt);
+\draw[color=qqqqtt] (-1.7501989461869456,6.450940215315453) node {$a_{11}$};
+\draw [fill=black] (0.,6.) circle (2.5pt);
+\draw[color=black] (0.25578127058899647,6.450940215315453) node {$a_{12}$};
+\draw [fill=black] (2.,6.) circle (2.5pt);
+\draw[color=black] (2.240421272292854,6.450940215315453) node {$a_{13}$};
+\draw [fill=black] (4.,6.) circle (2.5pt);
+\draw[color=black] (4.246401489068796,6.450940215315453) node {$a_{14}$};
+\draw [fill=black] (-2.,4.) circle (2.5pt);
+\draw[color=black] (-1.814219591403199,4.359599138251179) node {$a_{21}$};
+\draw [fill=black] (0.,4.) circle (2.5pt);
+\draw[color=black] (0.25578127058899647,4.380939353323264) node {$a_{22}$};
+\draw [fill=black] (2.,4.) circle (2.5pt);
+\draw[color=black] (2.2617614873649385,4.316918708107011) node {$a_{23}$};
+\draw [fill=black] (4.,4.) circle (2.5pt);
+\draw[color=black] (4.246401489068796,4.444959998539517) node {$a_{24}$};
+\draw [fill=black] (-2.,2.) circle (2.5pt);
+\draw[color=black] (-1.686178300970692,2.332278706403158) node {$a_{31}$};
+\draw [fill=black] (0.,2.) circle (2.5pt);
+\draw[color=black] (0.29846170073316547,2.4603199968356644) node {$a_{32}$};
+\draw [fill=black] (2.,2.) circle (2.5pt);
+\draw[color=black] (2.3044419175091075,2.481660211907749) node {$a_{33}$};
+\draw [fill=black] (4.,2.) circle (2.5pt);
+\draw[color=black] (4.246401489068796,2.4389797817635803) node {$a_{34}$};
+\draw [fill=black] (-2.,0.) circle (2.5pt);
+\draw[color=black] (-1.7075185160427766,0.4543397800597284) node {$a_{41}$};
+\draw [fill=black] (0.,0.) circle (2.5pt);
+\draw[color=black] (0.2131008404448275,0.47567999513181286) node {$a_{42}$};
+\draw [fill=black] (2.,0.) circle (2.5pt);
+\draw[color=black] (2.3044419175091075,0.47567999513181286) node {$a_{43}$};
+\draw [fill=black] (4.,0.) circle (2.5pt);
+\draw[color=black] (4.246401489068796,0.4543397800597284) node {$a_{44}$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
